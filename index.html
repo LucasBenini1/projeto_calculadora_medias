@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Médias</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="title">
+            <img src="images/logo.png" alt="Logo" id="logo">
+            <h1>Calculadora de médias</h1>
+        </section>
+
+        <section class="inputsSec">
+            <input type="text" placeholder="Nome da atividade" id="atv">
+            <input type="number" placeholder="Nota" id="nota">
+            <button id="btn">Adicionar +</button>
+        </section>
+
+        <section class="mainSection">
+            <table id="activityTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nome da atividade</th>
+                        <th>Nota</th>
+                        <th>Aprovado?</th>
+                    </tr>
+                </thead>
+                <tbody id="bellow">
+                    <!-- Linhas serão adicionadas aqui -->
+                </tbody>
+            </table>
+            <div id="divMedia">
+                <p>Média Final</p>
+                <p id="notaFinal"></p>
+                <p id="aprFinal"></p>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

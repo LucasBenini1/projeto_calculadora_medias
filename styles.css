@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 239, 239);
+}
+main{
+    margin: 7% 30%;
+
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+}
+#logo{
+    height: 30px;
+}
+.inputsSec{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+#atv,
+#nota{
+    width: 140px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#btn{
+    background-color: green;
+    color: white;
+    width: 140px;
+    cursor: pointer;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.mainSection{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.bellow{
+    display: flex;
+    flex-direction: column;
+}
+
+#divMedia{
+    display: none;
+    justify-content: space-evenly;
+    padding: 4px;
+}
+.apr{
+    background-color: green;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+.rep{
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
