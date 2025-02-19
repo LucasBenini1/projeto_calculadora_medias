@@ -1,4 +1,14 @@
 let finais = [];
+function alerta(){
+    let min = prompt("Qual será a nota mínima?")
+
+    if(min.length === 0){
+        alert("Preencha o campo de nota mínima!")
+        alerta()
+    }
+}
+
+
 document.getElementById("btn").addEventListener("click", () => {
     let atv = document.getElementById("atv").value;
     let nota = Number(document.getElementById("nota").value);
@@ -42,7 +52,7 @@ document.getElementById("btn").addEventListener("click", () => {
 
         grade.innerHTML = media.toFixed(2);
 
-        if (media >= 5) {
+        if (media >= min) {
             aprFinal.innerHTML = "Aprovado";
             aprFinal.style.backgroundColor = 'green';
             aprFinal.style.color = 'white';
@@ -59,3 +69,5 @@ document.getElementById("btn").addEventListener("click", () => {
         alert("Preencha os campos corretamente.");
     }
 });
+
+alerta()
